@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 135%;
+    font-family: "Poppins", sans-serif;
+    color: hsl(228, 39%, 23%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+}
+
+p {
+    font-size: 13px;
+    color: hsl(227, 12%, 61%);
+}
+
+.header,
+.section1,
+.section2,
+footer {
+    padding: 5% 11%;
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+}
+
+nav,
+.introImage,
+.carousel {
+    width: 100%;
+}
+
+.iconHamburger,
+.iconClose,
+.menuHamburger,
+.errorMessage {
+    display: none;
+}
+
+.menu {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.menuHamburger {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 400px 0px hsl(227, 12%, 61%);
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    list-style: none;
+    padding: 10% 0;
+    margin: 10%;
+}
+
+.buttonGetStarted,
+.listNumber,
+.footerButton,
+.buttonGetStartedWhite {
+    background-color: rgb(242, 95, 58);
+    color: hsl(0, 0%, 98%);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    padding: 0 25px;
+    height: 40px;
+    white-space: nowrap;
+}
+
+.buttonGetStartedWhite {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+}
+
+a:hover,
+.buttonGetStarted:hover,
+.buttonGetStartedWhite:hover,
+.footerButton:hover {
+    opacity: 50%;
+}
+
+.columns {
+    display: flex;
+    gap: 10%;
+}
+
+.column {
+    width: 50%;
+}
+
+.principalTitle {
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.text {
+    width: 75%;
+}
+
+.testimonies {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.carousel {
+    display: flex;
+    gap: 2%;
+    overflow: hidden;
+}
+
+.carouselItem {
+    background: linear-gradient(hsl(0, 0%, 100%)15%, hsl(0, 0%, 98%) 0%);
+    flex: 0 0 450px;
+    padding: 0 3% 3%;
+    box-sizing: border-box;
+    transition: transform 3s ease;
+}
+
+.carousel:hover .carouselItem {
+    transform: translate(-150%);
+}
+
+.avatar {
+    width: 20%;
+}
+
+.sectionFinalMessage {
+    background-color: hsl(12, 88%, 59%);
+    background-position: top;
+    color: hsl(0, 0%, 98%);
+    padding: 5% 10%;
+    gap: 40%;
+}
+
+footer {
+    background-color: hsl(233, 12%, 13%);
+    font-size: smaller;
+}
+
+.socialMediaIcons:hover {
+    filter: invert(50%) sepia(46%) saturate(968%) hue-rotate(325deg) brightness(91%) contrast(108%);
+}
+
+.footerMenu {
+    font-size: small;
+    list-style: none;
+    color: hsl(0, 0%, 98%);
+    line-height: 35px;
+    text-wrap: nowrap;
+}
+
+.footerMenu:hover,
+.errorMessage {
+    color: hsl(12, 88%, 59%);
+}
+
+.footerInput {
+    border-radius: 20px;
+    border: none;
+    padding: 0 25px;
+    height: 40px;
+}
+
+.attribution,
+.errorMessage,
+.copyright {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(/images/bg-tablet-pattern.svg);
+        background-position: top right;
+        background-size: 50%;
+    }
+
+    .carousel:hover .carouselItem {
+        transform: translate(-300%);
+    }
+
+    .section1,
+    .section2,
+    footer {
+        padding: 5% 8%;
+    }
+
+    .columns {
+        gap: 5%;
+        justify-content: center;
+    }
+
+    .columnsFooter {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 80%;
+    }
+
+    .logo,
+    .text,
+    .column {
+        width: 100%;
+    }
+
+    .header button,
+    nav {
+        display: none;
+    }
+
+    .section1 {
+        flex-wrap: wrap-reverse;
+    }
+
+    .section2,
+    .sectionFinalMessage {
+        flex-wrap: wrap;
+    }
+
+    .column,
+    .sectionFinalMessage,
+    .columnsFooter {
+        text-align: center;
+    }
+
+    .listNumberTitle {
+        background-color: hsl(12, 100%, 96%);
+        line-height: 40px;
+    }
+
+    .columnsListNummber {
+        text-align: left;
+        gap: 0;
+    }
+
+    .columnsFooter {
+        flex-direction: column-reverse;
+    }
+
+    .iconHamburger {
+        display: block;
+    }
+}
