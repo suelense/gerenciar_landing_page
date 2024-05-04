@@ -24,6 +24,10 @@ p {
     color: hsl(227, 12%, 61%);
 }
 
+h2 {
+    font-size: medium;
+}
+
 .header,
 .section1,
 .section2,
