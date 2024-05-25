@@ -195,7 +195,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        background-image: url("images/bg-tablet-pattern.svg");
+        background-image: url("./images/bg-tablet-pattern.svg");
         background-position: top right;
         background-size: 50%;
     }
